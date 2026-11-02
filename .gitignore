@@ -1,0 +1,12 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
+.env
+whale-detection-challenge/
+whale_data.zip
+whale-data.zip
+*.pt
+*.pth
