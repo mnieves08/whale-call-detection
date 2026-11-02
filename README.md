@@ -4,7 +4,7 @@
 A machine learning project exploring how underwater audio can be used to identify North Atlantic right whale calls. The workflow compares a neural network trained on audio waveforms with a convolutional neural network trained on mel spectrograms.
 
 ## Project overview
-The code loads labeled audio clips, visualizes their waveforms and spectrograms, trains binary classifiers, and examines classification errors. This project was originally built in Google Colab and later exported to GitHub.
+The code loads labeled audio clips, visualizes their waveforms and spectrograms, trains binary classifiers, and examines classification errors. This project was originally built in Google Colab and later exported here on GitHub.
 
 **Tools:** Python, PyTorch, torchaudio, librosa, NumPy, pandas, scikit-learn, Matplotlib, and Seaborn.
 
