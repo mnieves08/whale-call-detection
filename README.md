@@ -1,10 +1,10 @@
 # Whale Call Detection
-**Michael Angelo Nieves | Princeton AI4ALL project**
+**Michael Angelo Nieves**
 
 A machine learning project exploring how underwater audio can be used to identify North Atlantic right whale calls. The workflow compares a neural network trained on audio waveforms with a convolutional neural network trained on mel spectrograms.
 
 ## Project overview
-The code loads labeled audio clips, visualizes their waveforms and spectrograms, trains binary classifiers, and examines classification errors. This repository presents the code from my Whale Detection v3 Colab notebook, with small execution fixes made for the portfolio export.
+The code loads labeled audio clips, visualizes their waveforms and spectrograms, trains binary classifiers, and examines classification errors. The code is adapted from the Whale Detection v3 Colab notebook.
 
 **Tools:** Python, PyTorch, torchaudio, librosa, NumPy, pandas, scikit-learn, Matplotlib, and Seaborn.
 
@@ -58,7 +58,7 @@ The CSV uses `clip_name` and `label` columns. Labels are 0 for non-whale and 1 f
 To use a dataset already on your computer, skip notebook code cell 4 (the download/extraction block) and set `WHALE_DATA_DIR` to the folder containing `audio/` and `labels.csv`. Setting the variable alone does not disable the download.
 
 ## Evaluation and limitations
-The script computes test accuracy and confusion matrices when run. This repository does not include saved training outputs or trained weights, so no numerical performance claim is made here. End-to-end training has not been rerun for this upload.
+The script computes test accuracy and confusion matrices when run. This repository does not include saved training outputs or trained weights, so no numerical performance claim is made here. End-to-end training has not been rerun for this version.
 
 An experimental prompt offers to replace labels with confident model predictions. Answer **no** to retain the original labels. Model confidence alone does not establish that a label is incorrect; any relabeling should be independently reviewed.
 
@@ -67,7 +67,7 @@ The later ResNet and ensemble cells instantiate new models and overwrite the `mo
 ## Export notes
 Notebook cell markers are preserved. Small fixes handle single-example error indexing, rewind an in-memory audio buffer before playback, retain the batch dimension for CNN loss calculation, and initialize the ensemble CNNs with spectrogram shapes.
 
-Python syntax compilation passed. Dependency installation, dataset access, and full training were not validated for this upload; dependency versions are not locked.
+Python syntax compilation passed. Dependency installation, dataset access, and full training were not validated for this version; dependency versions are not locked.
 
 ## Context
-This project was developed during Princeton AI4ALL. It is shared here as an educational portfolio project documenting work with audio preprocessing, neural networks, and model evaluation.
+This project was developed during Princeton AI4ALL and explores audio preprocessing, neural networks, and model evaluation.
